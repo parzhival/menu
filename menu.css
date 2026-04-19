@@ -1,0 +1,91 @@
+:root {
+    --neon-blue: #00d4ff;
+    --neon-purple: #9400d3;
+    --bg-dark: #050a0f;
+    --card-bg: rgba(10, 20, 30, 0.8);
+    --text-color: #e0f7ff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    background-image: 
+        linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px; /* Efecto de cuadrícula tecnológica */
+    color: var(--text-color);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.main-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.header-vibrant {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--neon-blue);
+    padding-bottom: 20px;
+    box-shadow: 0 10px 20px -10px var(--neon-blue);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.author-tag span {
+    color: var(--neon-blue);
+    font-weight: bold;
+}
+
+/* Simetría con Grid */
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px; /* Asegura simetría de altura */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.link-title {
+    color: var(--neon-blue);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.link-title:hover {
+    color: white;
+    text-shadow: 0 0 8px var(--neon-blue);
+}
+
+p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
