@@ -1,0 +1,2 @@
+prompt #1
+actua como un diseñador grafico y estiliza la pagina con una estetica vibrante y tecnologica, manteniendo simetria en las proporciones de los divs, añade ids o las class que creas necesarias para la tarea
